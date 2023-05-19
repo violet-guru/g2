@@ -42,6 +42,7 @@ observeDOM(listElm, function (m) {
         "nav-logo-wrap",
         "nav-drop-down-wrap",
         "nav-link-text",
+        "post-item-image-wrap",
       ];
       const isSamePage = [...tag.classList].some((x) => myClasses.includes(x));
 
