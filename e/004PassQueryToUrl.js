@@ -51,8 +51,9 @@ observeDOM(listElm, function (m) {
         );
 
         const mySearch = window.location.search;
+        const mySeparator = mySearch.length > 0 ? "&" : "?";
         const myPath =
-          urlPath + (mySearch.length > 0 ? mySearch + "&" : "?") + urlQuery;
+          urlPath + mySearch + (urlQuery.length > 0 ? mySeparator : "") + urlQuery;
         if (isSamePage) {
           window.location.href = myPath;
         } else {
